@@ -34,7 +34,7 @@ addbook("The Song of Achilles", "Madline Miller", 250, true)
 
 function display(){
 for (book of mylibrary){
-    console.log(book.info());
+    // console.log(book.info());
 }
 }
 const dialog = document.querySelector('#dialog')

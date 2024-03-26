@@ -20,16 +20,25 @@
         </div>
         <dialog id="dialog">
             <h3>Add a book!</h3>
+            <div>
             <form action="dialog" id="myform" method="dialog">
                 <label for="title">Book Title</label>
-            <input type="text" value="" name="" class="title" required>
+                <input type="text" value="" name="" class="title" required>
+            </div>
+            <div>
                 <label for="author">Author Name</label>
-            <input type="text" name="author" value="" class="author" required>
+                <input type="text" name="author" value="" class="author" required>
+            </div>
+            <div>
                 <label for="pages">Pages</label>
-            <input type="number" min="1" required name="pages" value="" class="pages">
+                <input type="number" min="1" required name="pages" value="" class="pages">
+            </div>
 
+            <div class="check">
                 <label for="read">Already read?</label>
             <input type="checkbox" name="read" value="read" class="read">
+            </div>
+
             </form>
 
             <button type="submit" form="myform" class="close-button">Save</button>

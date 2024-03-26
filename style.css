@@ -1,24 +1,37 @@
 *{
+    
+    transition: all .2s ease-in-out;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 html, body{
     height: 100%;
+    padding: 0 0;
+    margin: 0 0;
 }
 
+
+.header{
+    border: 1px solid black;
+    background-color: #38bdf8;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .open-button{
     height: 6rem;
     width: 6rem;
     border-radius: 6rem;
-    background-color: blue;
+    background-color: #0ea5e9;
     color: white;
     border: 2px solid lightblue;
     font-size: 4rem;
     position: absolute;
     padding: 15px;
-    box-shadow: 0.1rem 0.01rem 1rem darkblue;
+    box-shadow: 0.1rem 0.01rem 1rem #2563eb;
     bottom: 10%;
     right: 10%;
     padding-bottom: 20px;
@@ -26,11 +39,10 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
-
     transition: all .2s ease-in-out;
 }
 .open-button:hover{
-    background-color: darkblue;
+    background-color: #0369a1;
     cursor: pointer;
     transform: scale(125%);
 }
@@ -40,6 +52,71 @@ html, body{
     color: black;
 }
 
-#dialog{
+dialog{
+    background-color: #3b82f6;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 30%;
+    border-radius: 1rem;
+    justify-content: space-around;
+    color: white;
+    font-size: larger;
+    text-shadow: 1px 1px 1px black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+dialog:not([open]){
+    display: none;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+#myform div{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
 
 }
+
+input{
+    width: 100%;
+    height: 2rem;
+    border-radius: 0.5rem;
+    padding: 5px;
+    border: 1px solid #155e75;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.check input{
+    width: fit-content;
+    height: 20px;
+    width: 20px;
+}
+
+.close-button{
+    background-color: white;
+    border-radius: 2rem;
+    width: 50%;
+    height: 10%;
+    align-self: center;
+    border: 2px solid #1e40af;
+    transition: all .2s ease-in-out;
+}
+.close-button:hover{
+    background-color:#7dd3fc ;
+
+}
+.close-button:active{
+    background-color: white;
+}
+
