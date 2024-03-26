@@ -7,6 +7,31 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-    
+        <div class="header">
+            <h2>Library</h2>
+        </div>
+        <div class="main">
+
+
+        </div>
+
+
+        <dialog id="dialog">
+            <h3>Add a book!</h3>
+
+            
+            <form action="dialog">
+                <label for="title">Book Title</label>
+            <input type="text" value="title" name="title" class="title" required>
+                <label for="author">Author Name</label>
+            <input type="text" name="author" value="author" class="author" required>
+                <label for="pages">Pages</label>
+            <input type="number" min="1" required name="pages" value="pages" class="pages">
+
+                <label for="read">Already read?</label>
+            <input type="checkbox" name="read" value="read" class="read">
+            </form>
+        </dialog>
+
     </body>
 </html>
