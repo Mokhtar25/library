@@ -92,7 +92,8 @@ input{
 }
 .check{
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
+    margin-top: 15px;
     align-items: center;
     justify-content: center;
     gap: 25px;
@@ -115,6 +116,7 @@ input{
 .close-button:hover{
     background-color:#7dd3fc ;
 
+    
 }
 .close-button:active{
     background-color: white;
