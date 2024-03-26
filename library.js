@@ -32,8 +32,10 @@ addbook("Normal People", "Salley Ronney", 150, false);
 addbook("Maybe You should talk to someone", "Lori Gottlieb", 300, true);
 addbook("The Song of Achilles", "Madline Miller", 250, true)
 
+function display(){
 for (book of mylibrary){
     console.log(book.info());
+}
 }
 const dialog = document.querySelector('#dialog')
 const open_button = document.querySelector('.open-button');
@@ -43,8 +45,33 @@ open_button.addEventListener("click", ()=>{
     dialog.showModal();
 
 })
+// varibles
+let title;
+let author;
+let pages;
+let read = false;
+
+
+const title_input = document.querySelector('.title');
+const author_input = document.querySelector('.author');
+const pages_input = document.querySelector('.pages');
+const read_input = document.querySelector('.read')
+
+
+
+
 const form = document.querySelector('form');
 close_button.addEventListener("click", ()=>{
+
+    title = title_input.value;
+    author = author_input.value;
+    pages = pages_input.value;
+    if (read_input.checked){
+        read = true
+    }
+
+    addbook(title, author, pages, read);
+    display();
 })
 
 
