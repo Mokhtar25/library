@@ -35,3 +35,16 @@ addbook("The Song of Achilles", "Madline Miller", 250, true)
 for (book of mylibrary){
     console.log(book.info());
 }
+const dialog = document.querySelector('#dialog')
+const open_button = document.querySelector('.open-button');
+const close_button = document.querySelector('.close-button');
+
+open_button.addEventListener("click", ()=>{
+    dialog.showModal();
+
+})
+const form = document.querySelector('form');
+close_button.addEventListener("click", ()=>{
+})
+
+

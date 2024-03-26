@@ -15,12 +15,12 @@
 
         </div>
 
-
+        <div class="open-button">
+            +
+        </div>
         <dialog id="dialog">
             <h3>Add a book!</h3>
-
-            
-            <form action="dialog">
+            <form action="dialog" id="myform" method="dialog">
                 <label for="title">Book Title</label>
             <input type="text" value="title" name="title" class="title" required>
                 <label for="author">Author Name</label>
@@ -31,7 +31,14 @@
                 <label for="read">Already read?</label>
             <input type="checkbox" name="read" value="read" class="read">
             </form>
+
+            <button type="submit" form="myform" class="close-button">Save</button>
+
+
         </dialog>
 
     </body>
+    <script src="library.js">
+        
+    </script>
 </html>
