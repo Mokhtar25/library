@@ -55,10 +55,16 @@ let read = false;
 const title_input = document.querySelector('.title');
 const author_input = document.querySelector('.author');
 const pages_input = document.querySelector('.pages');
-const read_input = document.querySelector('.read')
+const read_input = document.querySelector('.read');
+const close_header = document.querySelector('.close');
 
-
-
+close_header.addEventListener("click", ()=>{
+    dialog.close();
+    title_input.value = '';
+    author_input.value = '';
+    pages_input.value = '';
+    read_input.checked = false;
+})
 
 const form = document.querySelector('form');
 close_button.addEventListener("click", ()=>{

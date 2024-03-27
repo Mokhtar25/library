@@ -122,3 +122,25 @@ input{
     background-color: white;
 }
 
+.close{
+    position: static;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    text-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0;
+    background-color: #f43f5e;
+}
+.close:hover{
+    background-color: #e11d48;
+
+}
+.dialog-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
