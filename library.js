@@ -58,6 +58,7 @@ for (book of mylibrary){
     checked_div.classList.add('card_checked');
     checked_div.innerText = 'Read'
     if (book.read === false){
+        checked_div.innerText = 'Not Read'
         checked_div.classList.add('card_checked_not');
     }
     container.appendChild(checked_div);
@@ -129,11 +130,8 @@ const cards_ = document.querySelectorAll('.main .card')
 cards_.forEach((e)=>{
         let data =  e.querySelector('.close');
     data.addEventListener('click', ()=>{
-        console.log('clicked', e.textContent)
         let title   = e.firstChild.textContent
-        console.log(title);
          let index = mylibrary.findIndex((elm)=> elm.title == title)
-         console.log(index);
         if (index !== -1){
             mylibrary.splice(index, 1);
         }
@@ -142,13 +140,13 @@ cards_.forEach((e)=>{
     let read_btn = e.querySelector('.card_checked');
     read_btn.addEventListener('click', ()=>{
         let book = e.firstChild.textContent;
-        console.log("click")
         let index_r = mylibrary.findIndex((el) => el.title == book);
         if (index_r !== -1){
             if (mylibrary[index_r].read === true){
                 mylibrary[index_r].read = false;
                 e.classList.add('card_checked_not');
-            }
+            }  
+
             else{
                 mylibrary[index_r].read = true;
                 e.classList.remove('card_checked_not');

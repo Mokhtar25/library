@@ -179,7 +179,11 @@ input{
 
 .card_checked{
     border: 2px solid black;
+    width: 10rem;
     border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #15803d;
     font-size: 1.4rem;
     padding: 10px 20px;
