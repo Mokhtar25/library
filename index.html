@@ -7,24 +7,27 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
+        <div class="open-button">+</div>
         <div class="header">
             <h2>Library</h2>
         </div>
         <div class="main">
-
-
+            <!--     <div class="card"> -->
+            <!--         <div class="card_title">The book</div> -->
+            <!--         <div class="card_author">Adam Sandler</div> -->
+            <!--         <div class="close-button close card_close">X</div> -->
+            <!--         <div class="card_pages">128</div> -->
+            <!--         <div class="card_checked">Read</div> -->
+            <!-- </div> -->
         </div>
 
-        <div class="open-button">
-            +
-        </div>
         <dialog id="dialog">
             <div class="dialog-header">
             <h3>Add a book!</h3>
-            <div class="open-button close" >X</div>
+            <div class="open-button close" id="close_dialog">X</div>
 
             </div>
-            <form action="dialog" id="myform" method="dialog">
+            <form  action="dialog" id="myform" method="dialog">
                 <div>
                 <label for="title">Book Title</label>
                 <input type="text" value=""  class="title" required>
@@ -45,7 +48,7 @@
 
             </form>
 
-            <button type="submit" form="myform" class="close-button">Save</button>
+            <button type="submit" form="myform" id="submit_form" class="close-button">Save</button>
 
 
         </dialog>
