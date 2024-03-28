@@ -199,6 +199,10 @@ input{
 .card_checked:active{
     background-color: wheat;
 }
+input[type="checkbox"]:hover{
+    cursor: pointer;
+
+}
 
 .main{
     display: grid;
