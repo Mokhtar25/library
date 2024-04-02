@@ -1,21 +1,44 @@
 
 let mylibrary = [];
 
-function Book(title, author, pages, read){
-    this.title= title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
+// function Book(title, author, pages, read){
+//     this.title= title;
+//     this.author = author;
+//     this.read = read;
+//     this.pages = pages;
+//
+//     this.info = function(){
+//         let read = 'Not read yet';
+//         if (this.read === true){
+//             read = `read`;
+//         }
+//          return `${this.title} by ${this.author}, ${this.pages} pages, ${read}`
+//         
+//     }
+// }
 
-    this.info = function(){
-        let read = 'Not read yet';
-        if (this.read === true){
-            read = `read`;
-        }
-         return `${this.title} by ${this.author}, ${this.pages} pages, ${read}`
-        
+class Book{
+    
+    constructor(title, author, pages, read){
+        this.title = title;
+        this.author = author;
+        this.read = read;
+        this.pages = pages;
     }
+
+    info(){
+        let read = `Not read yet`;
+        if (this.pages === true){
+            read = `Read`
+
+        }
+
+        return `${this.title} by ${this.author}, ${this.pages} pages, ${read}`
+    }
+    
 }
+
+
  
 const albert = new Book(`the stranger`, `albert camus`, 100, false);
 
